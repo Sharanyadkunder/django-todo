@@ -2,6 +2,8 @@ from django.contrib import admin
 from django.urls import path,include
 from accounts.views import register, login_view, logout_view
 from tasks import views as task_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -17,3 +19,6 @@ urlpatterns = [
     
     path('', include('tasks.urls')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

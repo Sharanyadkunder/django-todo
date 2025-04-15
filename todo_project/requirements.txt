@@ -1,8 +1,13 @@
+--only-binary bcrypt
+bcrypt==4.0.1  # or the latest version with precompiled wheels
+Flask==2.1.1
+<other packages>
+--only-binary :all:
+--extra-index-url https://pypi.org/simple
+
 absl-py==2.1.0
 alembic==1.14.0
 anyio==4.0.0
-argon2-cffi==23.1.0
-argon2-cffi-bindings==21.2.0
 arrow==1.3.0
 asgiref==3.8.1
 asttokens==2.4.1
@@ -98,7 +103,7 @@ nbformat==5.9.2
 nest-asyncio==1.5.8
 notebook==7.0.6
 notebook_shim==0.2.3
-numpy==1.26.1
+numpy>=1.23
 opencv-python==4.10.0.84
 opencv-python-headless==4.10.0.84
 opt_einsum==3.4.0
@@ -122,7 +127,6 @@ pyparsing==3.1.1
 python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3.post1
-pywin32==306
 pywinpty==2.0.12
 PyYAML==6.0.1
 pyzmq==25.1.1
