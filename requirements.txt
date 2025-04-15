@@ -1,7 +1,6 @@
 --only-binary bcrypt
 bcrypt==4.0.1  # or the latest version with precompiled wheels
 Flask==2.1.1
-<other packages>
 --only-binary :all:
 --extra-index-url https://pypi.org/simple
 
