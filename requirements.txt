@@ -1,3 +1,11 @@
+--only-binary bcrypt
+bcrypt==4.0.1  # or the latest version with precompiled wheels
+Flask==2.1.1
+<other packages>
+--only-binary :all:
+--extra-index-url https://pypi.org/simple
+
+
 absl-py==2.1.0
 alembic==1.14.0
 anyio==4.0.0
@@ -99,7 +107,7 @@ nbformat==5.9.2
 nest-asyncio==1.5.8
 notebook==7.0.6
 notebook_shim==0.2.3
-numpy>=1.23
+numpy
 opencv-python==4.10.0.84
 opencv-python-headless==4.10.0.84
 opt_einsum==3.4.0
